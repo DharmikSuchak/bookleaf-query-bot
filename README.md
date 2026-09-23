@@ -15,7 +15,7 @@ Built as two n8n workflows, one for ingestion and one for querying.
 Loads the FAQ source document and populates the vector store.
 
 1. Downloads the FAQ document from Google Drive, converting it to PDF
-2. Passes it through the Default Data Loader, which splits the document into chunks
+2. Passes it through the Default Data Loader, which extracts and chunks the document text
 3. Embeds each chunk with Google Gemini
 4. Inserts the embeddings into the `faq_vectors` table in Supabase
 
